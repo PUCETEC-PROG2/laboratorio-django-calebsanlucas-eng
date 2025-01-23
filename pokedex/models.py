@@ -6,6 +6,7 @@ class Trainer(models.Model):
     last_name = models.CharField(max_length=30,null=False)
     birth_date = models.DateField()
     level = models.IntegerField(default=1)
+    trainer_picture = models.ImageField(upload_to="trainers_images", null=True, blank=True)
     
     def __str__(self) -> str:
         return f'{self.first_name} {self.last_name}'

@@ -12,4 +12,7 @@ urlpatterns = [
     path("edit_pokemon/<int:pokemon_id>/", views.edit_pokemon, name="edit_pokemon"),
     path("delete_pokemon/<int:pokemon_id>/", views.delete_pokemon, name="delete_pokemon"),
     path("login/", views.CustomLoginView.as_view(), name="login"),
+    path("add_trainer/", views.add_trainer, name="add_trainer"),
+    path("trainers/edit_trainer/<int:trainer_id>/", views.edit_trainer, name="edit_trainer"),
+    path("trainers/delet_trainer/<int:trainer_id>/", views.delet_trainer, name="delet_trainer"),
 ]
